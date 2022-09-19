@@ -1,0 +1,3 @@
+The Abstract Factory provides you with an interface for creating objects from each class of the product family.
+As long as your code creates objects via this interface, you don’t have to worry about creating
+the wrong variant of a product which doesn’t match the products already created by your app.
