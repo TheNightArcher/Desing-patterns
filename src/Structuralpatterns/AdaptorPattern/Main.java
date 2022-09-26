@@ -2,11 +2,11 @@ package Structuralpatterns.AdaptorPattern;
 
 public class Main {
     public static void main(String[] args) {
+        Vehicle porsche911 = new Porsche911();
 
-        USB usb = new USB("Dangers women");
-        CassetteTape cassetteTape = new CassetteTape("Rear");
+        SpeedAdaptor speedAdaptor = new SpeedAdaptor(porsche911);
 
-        CarWithCassetteTapesRadio car = new AdaptorWithUSBPort(cassetteTape);
-
+        System.out.printf("%.2f km %n", porsche911.getSpeed());
+        System.out.printf("%.2f mph", speedAdaptor.getSpeed());
     }
 }
